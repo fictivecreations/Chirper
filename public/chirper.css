@@ -1,0 +1,293 @@
+body {
+	margin: 0;
+	background-color: #F9F9F9;
+	font-family: Sans-Serif;
+}
+
+/*Header Styles*/
+
+#header {
+	position: relative;
+	background-color: #56ABED;
+	color: #C3E1F9;
+	padding: 10px 10px;
+	width: 100%;
+}
+
+#header a {
+	text-decoration: none;
+	color: #C3E1F9;
+}
+
+#header a:hover {
+	color: white;
+}
+
+#header a.current {
+	color: white;
+	/*pointer-events: none;*/
+	cursor: default;
+}
+
+#header .logo {
+	position:absolute;
+	left: 50%;
+	color: white;
+	display: inline;
+}
+
+#header .user-icon {
+	position: relative;
+	display: inline;
+	padding: 0px 10px;
+}
+
+#header .user-icon i {
+	padding-right: 5px;
+}
+
+#header .search-bar-container {
+	position: absolute;
+	top: 5px;
+	right: 0;
+	padding-right: 40px;
+}
+
+#header .search-bar-container input[type="text"]{
+	background-color: #3B85C0;
+	border: none;
+	color: white;
+	height: 28px;
+	border-radius: 15px;
+	padding-left:10px;
+	padding-right: 30px;
+}
+
+#header .search-bar-container input[type="text"]::placeholder{
+	color: white;
+}
+
+#header .search-bar-container input[type="text"]:focus {
+	outline: none;
+}
+
+#header .search-bar-container::before {
+	position: absolute;
+	top: 5px;
+	left: 180px;
+	content: "\f002";
+	font-family: FontAwesome;
+	color: white;
+}
+
+/*Page Content Styles*/
+
+#content {
+	margin: 0 auto;
+	width: 70%;
+	padding-top: 20px;
+}
+
+#content .left-column {
+	display: inline-block;
+	width: 33%;
+	padding-right: 2%;
+}
+
+#content .right-column {
+	display: inline-block;
+	width: 65%;
+}
+
+#content .user {
+	border: 1px solid #EEEEEE;
+	border-radius: 5px
+	width: 100%;
+	text-align: center;
+}
+
+#content .user .header-img {
+	position: relative;
+	height: 150px;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+#content .user .profile-img {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	margin: auto;
+	width: 80px;
+	height: 80px;
+	border-radius: 50px;
+	background-size: cover;
+}
+
+/* User Stats Styles */ 
+#content .user .stats {
+	height: 60px;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid #EEEEEE;
+}
+
+#content .user .stats .stats-box {
+	display: inline-block;
+	border-right: 1px solid #EEEEEE;
+	width: 33%;
+	overflow: hidden;
+	height: 100%;
+}
+
+#content .user .stats .stats-box:last-child {
+	border: none;
+}
+
+#content .user .stats div.header {
+	text-align: left;
+	text-transform: uppercase;
+	color: #B6C2C9;
+	font-size: 12px;
+	padding-left: 5px;
+	padding-top: 10px;
+}
+
+#content .user .stats div.data {
+	text-align: left;
+	padding-left: 5px;
+	padding-top: 5px;
+	color: #66747F;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+/* Compose Tweet Styles */
+
+#content .user .compose {
+	position: relative;
+	height: 50px;
+}
+
+#content .user .compose input[type="text"]{
+	background-color: #FFFFFF;
+	border: 1px solid #EEEEEE;
+	color: #B3B3B3;
+	border-radius: 5px;
+	width: 95%;
+	height: 30px;
+	margin-top: 10px;
+	padding-left: 5px;
+	font-size: 14px;
+}
+
+#content .user .compose input[type="text"]::placeholder{
+	color: #C0C0C0;
+	font-size: 14px;
+}
+
+#content .user .compose input[type="text"]:focus {
+	outline: none;
+}
+
+
+/*Tweet Box Styles*/
+#content .right-column {
+    vertical-align: top;
+}
+
+#content .chirp-box {
+	width: 100%;
+	border: 1px solid #EEEEEE;
+	border-radius: 5px;
+	background-color: #FFFFFF;
+}
+
+#content .chirp-header {
+	border-bottom: 1px solid #EEEEEE;
+	color: #66747F;
+	font-size: 24px;
+	padding: 10px 10px;
+	letter-spacing: 1px;
+}
+
+
+/* Individual Tweet Styles */
+.chirp {
+    box-sizing: border-box;
+	position: relative;
+	width: 100%;
+	border-bottom: 1px solid #EEEEEE;
+	padding: 10px;
+}
+
+.chirp .chirp-img {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+}
+
+.chirp .chirp-img img {
+	border-radius: 5px;
+}
+
+.chirp .inside-chirp {
+	padding-left: 60px;
+}
+
+.chirp .chirp-username{
+	display: inline;
+	color: black;
+	font-size: 18px;
+	font-weight: bold;
+	padding-right: 5px;
+	vertical-align: middle;
+}
+
+.chirp .chirp-user{
+	display: inline;
+	color: #CBD5DD;
+	font-size: 14px;
+	vertical-align: text-top;
+}
+
+.chirp .chirp-time{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	display: inline;
+	color: #CBD5DD;
+	font-size: 14px;
+}
+
+.chirp .chirp-text {
+	display: block;
+	color: black;
+	font-size: 16px;
+	padding: 5px 0;
+}
+
+.chirp .action-icons {
+	padding: 5px 0;
+}
+
+.chirp .action-icons i {
+	position: relative;
+	display: inline;
+	padding-right: 30px;
+	color: #CBD5DD;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.chirp .action-icons i:hover::after {
+  content: attr(tooltip);
+  background-color: #66747F;
+  padding: 5px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 12px;
+  top: 20px;
+  left: -10px;
+  position: absolute;
+}

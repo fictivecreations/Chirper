@@ -1,0 +1,45 @@
+<html>
+<head>
+	<script type="text/javascript" src="jquery/dist/jquery.js"></script>
+	<script type="text/javascript" src="handlebars/dist/handlebars.js"></script>
+	<script type="text/javascript" src="chirper.js"></script>
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<link rel="stylesheet" href="chirper.css">
+</head>
+<body>
+<!-- Header -->
+	<div id="header">
+		<div id="chirpsatme" class="user-icon">
+			<a class="current" href="#/"><i class="fa fa-user"></i>Chirps at Me</a>
+		</div>
+		<div id="chirpsatworld" class="user-icon">
+			<a href="#/"><i class="fa fa-user"></i>Chirps at World</a>
+		</div>
+		<div class="logo"><i class="fa fa-twitter"></i></div>
+		<div class="search-bar-container"><input placeholder="Search" type="text"></div>
+	</div>
+
+<!-- Page Content -->
+	<div id="content">
+		<div class="left-column">
+			<div class="user">
+				<div class="header-img">
+					<div class="profile-img"></div>
+				</div>
+				<div class="stats">
+					<div id="chirps-count" class="stats-box"><div class="header">Chirps</div><div class="data"></div></div><div id="follow-count" class="stats-box"><div class="header">Following</div><div class="data"></div></div><div id="followers-count" class="stats-box"><div class="header">Followers</div><div class="data"></div></div>
+				</div>
+				<div class="compose"><input placeholder="Compose new Tweet..." type="text"></div>
+			</div>
+		</div><div class="right-column">
+			<div class="chirp-box">
+				<div class="chirp-header">Chirps</div>
+				<div id="chirp-content">
+					<!-- This is where tweet template will generate -->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
